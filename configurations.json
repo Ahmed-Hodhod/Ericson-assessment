@@ -1,0 +1,107 @@
+{
+  "bulkCmConfigDataFile" : {
+    "configData" : {
+      "xn:SubNetwork" : {
+        "xn:SubNetwork" : {
+          "xn:MeContext" : {
+            "xn:ManagedElement" : {
+              "xn:attributes" : {
+                "xn:userLabel" : { }
+              },
+              "xn:VsDataContainer" : {
+                "xn:attributes" : {
+                  "xn:vsDataType" : {
+                    "value" : "vsDataSystemFunctions"
+                  },
+                  "es:vsDataSystemFunctions" : {
+                    "es:systemFunctionsId" : {
+                      "value" : "1"
+                    }
+                  },
+                  "xn:vsDataFormatVersion" : {
+                    "value" : "EricssonSpecificAttributes"
+                  }
+                },
+                "xn:VsDataContainer" : {
+                  "xn:attributes" : {
+                    "xn:vsDataType" : {
+                      "value" : "vsDataFm"
+                    },
+                    "xn:vsDataFormatVersion" : {
+                      "value" : "EricssonSpecificAttributes"
+                    },
+                    "es:vsDataFm" : {
+                      "es:heartbeatInterval" : {
+                        "value" : "60"
+                      },
+                      "es:fmId" : {
+                        "value" : "1"
+                      }
+                    }
+                  },
+                  "xn:VsDataContainer" : {
+                    "xn:attributes" : {
+                      "xn:vsDataType" : {
+                        "value" : "vsDataFmAlarmModel"
+                      },
+                      "es:vsDataFmAlarmModel" : {
+                        "es:fmAlarmModelId" : {
+                          "value" : "1"
+                        }
+                      },
+                      "xn:vsDataFormatVersion" : {
+                        "value" : "EricssonSpecificAttributes"
+                      }
+                    },
+                    "xn:VsDataContainer" : {
+                      "xn:attributes" : {
+                        "xn:vsDataType" : {
+                          "value" : "vsDataFmAlarmType"
+                        },
+                        "xn:vsDataFormatVersion" : {
+                          "value" : "EricssonSpecificAttributes"
+                        },
+                        "es:vsDataFmAlarmType" : {
+                          "es:configuredSeverity" : { },
+                          "es:fmAlarmTypeId" : {
+                            "value" : "OPMInternalFailure"
+                          },
+                          "es:filterOperationalState" : { },
+                          "es:isNotified" : {
+                            "value" : "0"
+                          },
+                          "es:filterList" : { }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "xn:VsDataContainer" : {
+              "xn:attributes" : {
+                "xn:vsDataType" : {
+                  "value" : "vsDataMeContext"
+                },
+                "xn:vsDataFormatVersion" : {
+                  "value" : "EricssonSpecificAttributes"
+                },
+                "es:vsDataMeContext" : {
+                  "es:neType" : {
+                    "value" : "1033560189"
+                  },
+                  "es:MeContextId" : {
+                    "value" : "W5543-R5GN-ER-01-HAR"
+                  },
+                  "es:platformType" : { }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "fileHeader" : { },
+    "fileFooter" : { }
+  }
+}
