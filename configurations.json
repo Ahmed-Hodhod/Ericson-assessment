@@ -1,6 +1,8 @@
 {
   "bulkCmConfigDataFile" : {
+    "@xmlns:es" : "EricssonSpecificAttributes.xsd",
     "configData" : {
+      "@dnPrefix" : "Undefined",
       "xn:SubNetwork" : {
         "xn:SubNetwork" : {
           "xn:MeContext" : {
@@ -8,6 +10,7 @@
               "xn:attributes" : {
                 "xn:userLabel" : { }
               },
+              "@id" : "W5543-R5GN-ER-01-HAR",
               "xn:VsDataContainer" : {
                 "xn:attributes" : {
                   "xn:vsDataType" : {
@@ -22,6 +25,7 @@
                     "value" : "EricssonSpecificAttributes"
                   }
                 },
+                "@id" : "1",
                 "xn:VsDataContainer" : {
                   "xn:attributes" : {
                     "xn:vsDataType" : {
@@ -39,6 +43,7 @@
                       }
                     }
                   },
+                  "@id" : "1",
                   "xn:VsDataContainer" : {
                     "xn:attributes" : {
                       "xn:vsDataType" : {
@@ -53,6 +58,7 @@
                         "value" : "EricssonSpecificAttributes"
                       }
                     },
+                    "@id" : "1",
                     "xn:VsDataContainer" : {
                       "xn:attributes" : {
                         "xn:vsDataType" : {
@@ -72,12 +78,14 @@
                           },
                           "es:filterList" : { }
                         }
-                      }
+                      },
+                      "@id" : "OPMInternalFailure"
                     }
                   }
                 }
               }
             },
+            "@id" : "W5543-R5GN-ER-01-HAR",
             "xn:VsDataContainer" : {
               "xn:attributes" : {
                 "xn:vsDataType" : {
@@ -95,13 +103,25 @@
                   },
                   "es:platformType" : { }
                 }
-              }
+              },
+              "@id" : "W5543-R5GN-ER-01-HAR"
             }
-          }
-        }
+          },
+          "@id" : "5GNSA"
+        },
+        "@id" : "ONRM_RootMo"
       }
     },
-    "fileHeader" : { },
-    "fileFooter" : { }
+    "@xmlns" : "configData.xsd",
+    "@xmlns:un" : "utranNrm.xsd",
+    "@xmlns:xn" : "genericNrm.xsd",
+    "@xmlns:gn" : "geranNrm.xsd",
+    "fileHeader" : {
+      "@fileFormatVersion" : "32.615 V4.5",
+      "@vendorName" : "Ericsson"
+    },
+    "fileFooter" : {
+      "@dateTime" : "2024-07-17T03:44:41.592+03:00"
+    }
   }
 }

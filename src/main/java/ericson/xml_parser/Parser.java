@@ -18,6 +18,10 @@ import java.util.Map;
 
 import java.io.IOException;
 
+
+import org.w3c.dom.NamedNodeMap;
+
+
 public class Parser {
     private final ObjectMapper objectMapper = new ObjectMapper();
 	
@@ -36,6 +40,21 @@ public class Parser {
 
     private static Map<String, Object> parseElement(Element element) {
         Map<String, Object> elementMap = new HashMap<>();
+        
+        // Add attributes, including namespace attributes
+        NamedNodeMap attributes = element.getAttributes();
+        if (attributes != null && attributes.getLength() > 0) {
+            for (int i = 0; i < attributes.getLength(); i++) {
+                Node attr = attributes.item(i);
+                String attrName = attr.getNodeName();
+                if (attr.getNamespaceURI() != null) {
+                    attrName = attr.getNamespaceURI() + ":" + attr.getLocalName();
+                }
+                elementMap.put("@" + attrName, attr.getNodeValue());
+            }
+        }
+        
+
         NodeList childNodes = element.getChildNodes();
 
         for (int i = 0; i < childNodes.getLength(); i++) {
@@ -53,6 +72,7 @@ public class Parser {
         }
         return elementMap;
     }
+    
     
     private void storeInFile(Map<String, Object> configurations, String fileName) {
         try {
