@@ -42,5 +42,16 @@ public class ConfigController {
     }
 }
 
-// curl -X POST -F "file=@test.xml" http://localhost:8080/api/configurations/upload
+// curl -X POST -F file="@/home/ahmed-hodhod/testat/test.xml" http://localhost:8081/api/configurations/upload
 
+// docker run -d --rm --name mongo  \
+//     -e MONGO_INITDB_ROOT_USERNAME=hodhod \
+//     -e MONGO_INITDB_ROOT_PASSWORD=hodhod \
+//     -p 27017:27017 \
+//     mongo
+
+// // // sudo docker exec -it mongo /bin/bash
+// // // mongosh --host localhost --port 27017 -u hodhod -p hodhod 
+
+
+// docker run -it  --rm mongo mongosh --host localhost:270127  -u hodhod -p hodhod  mongosh
