@@ -81,73 +81,42 @@ public class Parser {
             e.printStackTrace();
         }
     }
- public static void main(String[] args) {
-  try {
-
-   File folder = new File("/home/ahmed-hodhod/testat/");
-   File[] listOfFiles = folder.listFiles(); // get all files details
-
-   for (int i = 0; i < listOfFiles.length; i++) {
-    if (listOfFiles[i].isFile()
-      && listOfFiles[i].toString().contains(".xml")) { // check file is xml or not
-     System.out.println("\n*** File " + listOfFiles[i].getName()
-       + " ***\n");
-
-     File fXmlFile = new File("/home/ahmed-hodhod/testat/"
-       + listOfFiles[i].getName());
-    //  DocumentBuilderFactory dbFactory = DocumentBuilderFactory
-    //    .newInstance();
-    //  DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-    //  Document doc = dBuilder.parse(fXmlFile);
-    
-    //  doc.getDocumentElement().normalize();
-    //  System.out.println("Root element :"
-    //    + doc.getDocumentElement().getNodeName());
-     
-     
-     Map<String, Object> configurations = parseXml(fXmlFile);
-     System.out.println("Parsed XML Configurations: " + configurations);
-     
-      final ObjectMapper objectMapper = new ObjectMapper();
-     objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File("configurations.json"), configurations);
-
-     
-     //NodeList nList = doc.getElementsByTagName("bulkCmConfigDataFile");  // get details of 'staff' node from the file
-     
-
-    //  for (int temp = 0; temp < nList.getLength(); temp++) {
-    //   Node nNode = nList.item(temp);
-    //   System.out.println("\nCurrent Element :"
-    //     + nNode.getNodeName());
-    //   if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-    //    Element eElement = (Element) nNode;
-    //    System.out.println("Staff id : "
-    //      + eElement.getAttribute("id"));
-    //    System.out.println("First Name : "
-    //      + eElement
-    //        .getElementsByTagName("firstname")
-    //        .item(0).getTextContent());
-    //    System.out.println("Last Name : "
-    //      + eElement.getElementsByTagName("lastname")
-    //        .item(0).getTextContent());
-    //    System.out.println("Nick Name : "
-    //      + eElement.getElementsByTagName("nickname")
-    //        .item(0).getTextContent());
-    //    System.out.println("Salary : "
-    //      + eElement.getElementsByTagName("salary")
-    //        .item(0).getTextContent());
-
-    //   }
-    //  }
-
-    } else if (listOfFiles[i].isDirectory()) {
-     System.out.println("Directory " + listOfFiles[i].getName());
+    public static void main() {
+    	
     }
-   }
+//  public static void main(String[] args) {
+//   try {
 
-  } catch (Exception e) {
-   e.printStackTrace();
-  }
- }
+//    File folder = new File("/home/ahmed-hodhod/testat/");
+//    File[] listOfFiles = folder.listFiles(); // get all files details
+
+//    for (int i = 0; i < listOfFiles.length; i++) {
+//     if (listOfFiles[i].isFile()
+//       && listOfFiles[i].toString().contains(".xml")) { // check file is xml or not
+//      System.out.println("\n*** File " + listOfFiles[i].getName()
+//        + " ***\n");
+
+//      File fXmlFile = new File("/home/ahmed-hodhod/testat/"
+//        + listOfFiles[i].getName());
+
+     
+     
+//      Map<String, Object> configurations = parseXml(fXmlFile);
+//      System.out.println("Parsed XML Configurations: " + configurations);
+     
+//       final ObjectMapper objectMapper = new ObjectMapper();
+//      objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File("configurations.json"), configurations);
+
+     
+
+//     } else if (listOfFiles[i].isDirectory()) {
+//      System.out.println("Directory " + listOfFiles[i].getName());
+//     }
+//    }
+
+//   } catch (Exception e) {
+//    e.printStackTrace();
+//   }
+//  }
 
 }
