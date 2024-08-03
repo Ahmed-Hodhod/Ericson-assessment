@@ -18,7 +18,7 @@ public class Configuration {
     public void setId(String id) {
         this.id = id;
     }
-
+ 
     public String getKey() {
         return key;
     }
